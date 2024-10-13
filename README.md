@@ -20,14 +20,11 @@ This repository presents a novel method for detecting **Blepharospasm**, a neuro
 
 This repository is structured as follows:
 
-- **data/**: Contains information and scripts for dataset creation (Note: Data is not included in the repo due to privacy concerns).
-  
-- **blepharospasm_dataset/**: Blepharospasm Video Dataset.
-  
-- **blink_closure_dataset/**: Blink (incl. tight) Closure Dataset.
-  
-- **landmark_annotated_dataset/**: Landmark Annotated Dataset.
-  
+- **data/**: Contains the following datasets (Note: Data is not included in the repo due to privacy concerns):
+  - **blepharospasm_dataset/**: Contains videos of individuals with and without Blepharospasm.
+  - **blink_closure_dataset/**: Contains images of open and closed eyes, including tight closure images.
+  - **landmark_annotated_dataset/**: Contains the annotated landmark dataset for keypoint detection.
+
 - **models/**: Code for training and evaluating the CNN models (Eye State Detector and Key-Point Detector).
   
 - **features/**: Scripts for feature extraction (including Blink Closure, Long Blink Ratio, and Blink Normalness).
@@ -37,6 +34,4 @@ This repository is structured as follows:
 - **utils/**: Utility functions for data loading, preprocessing, and visualization.
   
 - **main.py**: Main script to run the entire pipeline.
-
-
 
